@@ -2,6 +2,8 @@ package com.engeto.homework2;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.net.Inet4Address;
+import java.net.InetAddress;
 import java.time.LocalDate;
 
 public class CarrotSeller {
@@ -13,10 +15,10 @@ public class CarrotSeller {
     private String city;
     private String spz;
     //in liters per 100 km
-    private BigDecimal consumption;
-    private String ip;
+    private double consumption;
+    private InetAddress ip;
 
-    public CarrotSeller(String name, LocalDate birthDate, int numberOfInvoices, int soldQuantity, String city, String spz, BigDecimal consumption, String ip) {
+    public CarrotSeller(String name, LocalDate birthDate, int numberOfInvoices, int soldQuantity, String city, String spz, double consumption, InetAddress ip) {
         this.name = name;
         this.birthDate = birthDate;
         this.numberOfInvoices = numberOfInvoices;

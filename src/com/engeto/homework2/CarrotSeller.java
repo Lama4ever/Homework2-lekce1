@@ -28,7 +28,8 @@ public class CarrotSeller {
     }
 
     public BigDecimal averageSellPerInvoice() {
-        BigDecimal average = BigDecimal.valueOf(soldQuantity).divide(BigDecimal.valueOf(numberOfInvoices), RoundingMode.HALF_DOWN);
+        BigDecimal average = BigDecimal.valueOf(soldQuantity).divide(BigDecimal.valueOf(numberOfInvoices), RoundingMode.HALF_EVEN);
+        // nebo double average = (double) soldQuantity / numberOfInvoices; pro nepresne ale desetinne cislo
         return average;
     }
 
